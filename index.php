@@ -1,15 +1,22 @@
-<!-- write your PHP script to define two string array -->
+<!-- Array for saving genre and subject data -->
 <?php
     $genre = array("Action", "Adventure", "Comedy", "Drama");
     $subject = array("Animation", "Children and Youth", "People");
-    ?>
-<!--write your php function  here -->
-<?php
+
+    //This function will display the genre array elements as option.
     function displayGenre($genre) {
         foreach ($genre as $value) {
             echo "<option>$value</option>";
         }
     }
+
+     //This function will display the subject array elements as option.
+    function displaySubject($subject) {
+        foreach ($subject as $value) {
+            echo "<option>$value</option>";
+        }
+    }
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -19,14 +26,12 @@
     <meta name="author" content="Hanbin Lee">
     <meta name="description" content="Movie details ">
     <meta name="keywords" content="CST8285, Lab 6, html code">
-    <title>Chapter 12</title>    
-    
+    <title>Record your favorite movie</title>
     <link rel="stylesheet" href="css/styles.css" />
    
 
 </head>
 <body>
-<!-- include the hearder file here -->
 <header>
     <h1>ACME Corporation</h1>
     <div class="tagline">Movies you can watch!</div>
@@ -47,18 +52,19 @@
        <p class="form__row"> 
            <label>Genre</label><br/>
            <select name="genre" class="form__input form__select">
-              <option>Choose genre</option> 
-              <!-- use php function to display gener options -->
-              
-              
-              
+              <option>Choose genre</option>
+               <?php
+                displayGenre($genre)
+                ?>
            </select>
        </p>
        <p class="form__row"> 
            <label>Subject</label><br/>
            <select name="subject" class="form__input form__select">
-              <option>Choose subject</option> 
-              <!-- use php function to display subject options -->
+              <option>Choose subject</option>
+               <?php
+                displaySubject($subject)
+                ?>
            </select>
        </p>
        <p class="form__row">	
