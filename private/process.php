@@ -5,6 +5,6 @@
     <title>Chapter 12</title>
 </head>
 <body>
-    
+    <!-- This page will display the user inputs -->
 </body>
 </html>
