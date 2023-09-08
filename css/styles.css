@@ -40,17 +40,13 @@ footer {
   font-style: italic;
   padding: 10px 0;
 } 
+
 /* classes for the header element and its contents */
-
 /* css classes for smaller header on scroll */
-
 .header--sticky {
   padding: 10px 0;
   background: white;
 }
-/* .header--sticky h1 a {
-  height: 23px;
-} */
 
 /* styling for form */
 
@@ -136,6 +132,7 @@ footer {
   padding-right: 0.5em;
   padding-bottom: 0.5em;
 }
+
 footer {
 
   margin-top: 10px;
